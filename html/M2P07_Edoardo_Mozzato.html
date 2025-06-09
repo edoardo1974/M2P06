@@ -4,27 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"><!-- Bootstrap Link -->
   </head>
 
+  <!--
+    Este trecho de CSS define uma media query para telas com largura máxima de 768px.
+  -->
   <style>
-    @media (max-width: 768px) {
+    @media (max-width: 768px) {  
     .responsive-image {
       max-width: 80%; /* L'immagine occupa il 70% del contenitore */
       height: auto; /* Mantiene le proporzioni */
     }
   }
 
+  /*
+    Esta media query CSS destina-se a dispositivos com largura máxima de 768px (normalmente tablets e dispositivos móveis).
+    
+  */
   @media (max-width: 768px) {
     .responsive-text {
-      font-size: 12px; /* Riduce la dimensione del testo per schermi più piccoli */
+      font-size: 12px; 
     }
   }
   </style>
 
   <body>
-    <div class="container text-center first-row ">
+    <!--
+      Esta seção define o container do cabeçalho da página usando classes do Bootstrap para layout e responsividade.
+      - O container principal utiliza as classes "container text-center first-row" para alinhamento e estilo.
+      - Dentro dele, uma linha é criada com três colunas principais:
+        1. A primeira coluna (col-2) contém a imagem do logotipo da empresa.
+        2. A segunda coluna (col-7) exibe uma imagem relacionada ao "stampaggio a freddo".
+        3. A terceira coluna (col-3) inclui um formulário de busca com um rótulo ("Procurar") e um campo de entrada de senha, 
+        organizados usando utilitários de grid e alinhamento do Bootstrap.
+    -->
+    <div class="container text-center first-row "><!-- Container para o cabeçalho -->
       <div class="row">
+        <div class="col-2">
+          <div class="mh-100" > <div class="row">
         <div class="col-2">
           <div class="mh-100" >
             <img src="C:\Users\hp 6470\Documents\Front end\M2P06\media\Logo.png" class="img-fluid" alt="Accessori">
@@ -43,7 +62,6 @@
             <div class="col-auto">
               <input type="password" id="inputPassword6" class="form-control form-control-sm responsive-text"  aria-describedby="passwordHelpInline">
             </div>
-            
           </div>
         </div>
       </div>
@@ -54,6 +72,16 @@
       </div>
     </div>
 
+    <!--
+      Esta seção cria uma barra de navegação responsiva usando classes do Bootstrap.
+      - O <div> externo utiliza "container text-center" para centralizar o conteúdo e fornecer espaçamento responsivo.
+      - Dentro, uma única "row" contém quatro colunas ("col"), cada uma com um botão de navegação.
+      - Cada botão está envolvido em um "d-flex justify-content-center" para centralizá-lo horizontalmente na coluna.
+      - Os botões alternam entre os estilos "btn-primary" e "btn-secondary" do Bootstrap para distinção visual.
+      - Todos os botões usam "btn-lg" para tamanho grande, "fs-0" para ajuste de fonte e "responsive-text" para 
+      responsividade adicional.
+      - Rótulos dos botões: "Home", "Quem somos", "Produtos" e "Contatos".
+    -->
     <div class="container text-center ">
       <div class="row">
         <div class="col">
@@ -84,6 +112,13 @@
       </div>
     </div>
 
+    <!--
+      Esta seção cria um container centralizado e responsivo usando classes do Bootstrap.
+      - O <div> externo utiliza "container-md text-center" para centralizar o conteúdo e definir largura média.
+      - Dentro, há uma <div> "row" para o layout em grid do Bootstrap.
+      - O <div> interno com "mh-100" garante que o conteúdo ocupe a altura máxima disponível.
+      - A tag <img> exibe "Accessori.png" como imagem responsiva usando as classes "img-fluid" e "responsive-image".
+    -->
     <div class="container-md text-center">
       <div class="row">
         <div class="mh-100" >
@@ -97,6 +132,10 @@
       </div>
     </div>
 
+    <!--
+      Esta seção exibe um container centralizado com um título responsivo (h5) que destaca
+      a inovação e fiabilidade da empresa na fabricação de máquinas para trabalhar chapa metálica.
+    -->
     <div class="container text-center responsive-text">
       <h5 class="responsive-text">
         Inovação e fiabilidade em máquinas para trabalhar chapa metálica.
@@ -111,6 +150,14 @@
       </div>
     </div>
 
+    <!--
+      Esta seção cria um container responsivo do Bootstrap com duas colunas:
+      - A primeira coluna centraliza e exibe uma imagem (Stampo_1.jpg) representando o "stampaggio a freddo" (estampagem 
+      a frio).
+      - A segunda coluna centraliza um título descritivo explicando o uso de uma matriz progressiva para chapas metálicas,
+      destacando sua adequação para produção em grande volume de peças pequenas ou médias.
+      O layout utiliza o sistema de grid do Bootstrap e utilitários de flex para alinhamento e responsividade.
+    -->
     <div class="container text-center">
       <div class="row">
         <div class="col">
@@ -133,6 +180,14 @@
     </div>
 
 
+    <!--
+      Esta seção cria um layout responsivo do Bootstrap com duas colunas:
+      - A primeira coluna contém um título centralizado (h5) com uma descrição do departamento de estampagem, destacando 
+      suas prensas mecânicas e capacidades de produção.
+      - A segunda coluna exibe uma imagem centralizada relacionada ao processo de estampagem, com altura e largura fixas, 
+      utilizando a classe 'img-fluid' do Bootstrap para responsividade.
+      Todo o layout está envolvido em um 'container' e 'row' do Bootstrap para alinhamento e espaçamento adequados.
+    -->
     <div class="container text-center">
       <div class="row">
         <div class="col">
@@ -156,6 +211,14 @@
     </div>
     
 
+    <!--
+      Esta seção cria um container responsivo usando a classe "container-md" do Bootstrap.
+      Dentro, exibe um título (h5) com a classe "responsive-text" contendo uma descrição
+      de uma matriz de estampagem profunda. O texto explica que este equipamento
+      é projetado para moldar uma folha plana de metal em uma forma tridimensional oca
+      (como cilindros, copos, tanques ou recipientes) através de um processo de deformação plástica
+      sem quebrar o material.
+    -->
     <div class="container-md">
       <h5 class="responsive-text">Uma matriz de estampagem profunda é um equipamento concebido para moldar uma folha plana 
         de metal num formato tridimensional oco (como cilindros, copos, tanques ou recipientes)
@@ -166,6 +229,15 @@
     <div class="container-md" style="height: 30px;">
     </div>
 
+    <!--
+      Esta seção cria um container responsivo do Bootstrap com três colunas, cada uma contendo um botão grande 
+      centralizado.
+      - A primeira coluna possui um botão primário com o rótulo "Projetos automotivos".
+      - A segunda coluna possui um botão secundário com o rótulo "Projetos de acessórios de cozinha".
+      - A terceira coluna possui um botão primário com o rótulo "Projetos de fogão de cozinha".
+      - A classe "responsive-text" é aplicada a todos os botões para estilização adicional do texto.
+      - O layout utiliza o sistema de grid do Bootstrap e utilitários de flex para alinhamento e responsividade.
+    -->
     <div class="container text-center" >
       <div class="row">
         <div class="col">
@@ -186,6 +258,14 @@
     <div class="container-md" style="height: 60px;">
     </div>
 
+    <!--
+      Esta seção cria um container responsivo com três colunas usando classes do Bootstrap.
+      - Primeira coluna: Exibe informações da empresa (nome, NIF, endereço) em uma lista estilizada.
+      - Segunda coluna: Centraliza e exibe a imagem do logotipo da empresa.
+      - Terceira coluna: Mostra informações de contato (telefone, WhatsApp, e-mail) em uma lista estilizada.
+      - Todos os itens da lista compartilham a mesma cor de fundo para consistência visual.
+      - O layout é responsivo e centraliza o conteúdo horizontalmente em cada coluna.
+    -->
     <div class="container-md responsive-text" style="background-color: rgb(157, 177, 189);">
       <div class="row" >
         <div class="col">
@@ -218,6 +298,15 @@
     <div class="container-md" style="height: 20px;">
     </div>
 
+    <!--
+      Esta seção cria uma barra de navegação centralizada usando classes do Bootstrap.
+      - O <div> externo utiliza "container-md" para largura responsiva e altura fixa de 60px.
+      - Dentro, um container flex ("d-flex justify-content-center") centraliza o conteúdo horizontalmente.
+      - A <ul> utiliza "nav justify-content-center" para exibir os links de navegação em linha e centralizados.
+      - Cada <li> representa um item de navegação, contendo um link <a> com as classes "nav-link" e "responsive-text".
+      - Os links apontam para "https://www.google.com" e representam seções típicas do site: Home, Agência, Contatos, 
+      Política de Cookies e Privacidade.
+    -->
     <div class="container-md" style="height: 60px;">
       <div class="d-flex justify-content-center">
         <ul class="nav justify-content-center">
@@ -247,6 +336,12 @@
     </div>
 
 
+    <!--
+      Esta tag de script inclui o bundle JavaScript do Bootstrap 5.3.3 a partir do CDN jsdelivr.
+      O bundle fornece os componentes interativos do Bootstrap (por exemplo, modais, dropdowns, tooltips).
+      O atributo 'integrity' garante que o arquivo não foi adulterado (Subresource Integrity).
+      O atributo 'crossorigin' permite que o navegador verifique a integridade do arquivo ao carregá-lo de um CDN.
+    -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
      crossorigin="anonymous"></script>
